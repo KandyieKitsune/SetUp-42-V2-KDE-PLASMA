@@ -58,7 +58,7 @@ First things first - let's get Fedora 42 KDE downloaded safely:
 **Verification (Don't skip this!):**
 Look, I know verification seems tedious, but trust me - one corrupted download and you'll be scratching your head for hours wondering why things aren't working right.
 
-![[KDE6.png]]
+![KDE6.png](attachment/KDE6.png)
 
 1. Download the checksum file the same folder as your ISO
 
