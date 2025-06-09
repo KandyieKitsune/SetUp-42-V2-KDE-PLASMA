@@ -411,7 +411,7 @@ sudo dnf install kvantum
 
 ### System Utilities & CPU Control
 
-**Auto CPU Frequency Management:**
+[**Auto CPU Frequency Management**](https://github.com/AdnanHodzic/auto-cpufreq):
 ```bash
 git clone https://github.com/AdnanHodzic/auto-cpufreq.git
 cd auto-cpufreq
