@@ -379,7 +379,7 @@ kf6-kdeclarative-devel kdecoration-devel wayland-devel \
 libX11-devel libXext-devel qt6-qttools-devel qt6-qtsvg-devel
 ```
 
-[**Better Blur Effect](https://github.com/taj-ny/kwin-effects-forceblur):**
+[**Better Blur Effect**](https://github.com/taj-ny/kwin-effects-forceblur):
 ```bash
 git clone https://github.com/taj-ny/kwin-effects-forceblur.git
 cd kwin-effects-forceblur
@@ -389,7 +389,7 @@ make -j
 sudo make install
 ```
 
-[**Kvantum Theme Engine](https://github.com/tsujan/Kvantum/releases):**
+[**Kvantum Theme Engine**](https://github.com/tsujan/Kvantum/releases):
 
 Method 1 (latest version):
 ```bash
@@ -465,7 +465,7 @@ Calender Notification and Discover autostart at boot and use additional RAM. To 
 This prevents the application from autostarting without completely removing it.
 
 ---
-##### ==Some additional articles that you may also find useful==
+##### Some additional articles that you may also find useful
 - [RAM Management](https://medium.com/@manorit2001/linux-less-ram-want-more-a-guide-to-increasing-your-ram-in-linux-5d5efee6ae2a)
 - [Paul Sørensen's Blog](https://paulsorensen.io/fedora-kde-plasma-post-installation-guide/)
 - [Arch Wiki](https://wiki.archlinux.org/title/Table_of_contents)
