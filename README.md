@@ -5,9 +5,15 @@
 
 ![KDE2.png](attachment/KDE2.png)
 
+![KDE10.png](attachment/KDE10.png)
+
 ![KDE5.png](attachment/KDE5.png)
 
 ![KDE1.png](attachment/KDE1.png)
+
+
+## Watch the Setup in Action on Youtube 
+[![Watch the video](attachment/KDE3.png)](https://youtu.be/6guuWjKGW8w)
 
 
 # Table Of Content
