@@ -12,33 +12,33 @@
 
 # Table Of Content
 
-- [[#Setup 42 Fedora KDE Plasma|Setup 42 Fedora KDE Plasma]]
-- [[#Getting Started|Getting Started]]
-	- [[#Getting Started#Download & Verification|Download & Verification]]
-	- [[#Getting Started#Creating Bootable Media|Creating Bootable Media]]
-- [[#Post-Install Setup|Post-Install Setup]]
-	- [[#Post-Install Setup#Firmware Updates|Firmware Updates]]
-	- [[#Post-Install Setup#Network Configuration|Network Configuration]]
-	- [[#Post-Install Setup#DNF Package Manager Tweaks|DNF Package Manager Tweaks]]
-	- [[#Post-Install Setup#Initial System Setup|Initial System Setup]]
-	- [[#Post-Install Setup#Adding Repositories|Adding Repositories]]
-- [[#Graphics & Hardware|Graphics & Hardware]]
-	- [[#Graphics & Hardware#Kernel & Build Tools|Kernel & Build Tools]]
-	- [[#Graphics & Hardware#AMD Graphics Setup|AMD Graphics Setup]]
-	- [[#Graphics & Hardware#NVIDIA Graphics Setup|NVIDIA Graphics Setup]]
-		- [[#NVIDIA Graphics Setup#Option 1: RPM Fusion (Recommended for most users)|Option 1: RPM Fusion (Recommended for most users)]]
-		- [[#NVIDIA Graphics Setup#Option 2: Official NVIDIA Repository|Option 2: Official NVIDIA Repository]]
-	- [[#Graphics & Hardware#User Permissions|User Permissions]]
-	- [[#Graphics & Hardware#Hybrid Graphics & PRIME|Hybrid Graphics & PRIME]]
-	- [[#Graphics & Hardware#GPU Application Offload|GPU Application Offload]]
-- [[#Customization & Extras|Customization & Extras]]
-	- [[#Customization & Extras#KDE Customization|KDE Customization]]
-	- [[#Customization & Extras#System Utilities & CPU Control|System Utilities & CPU Control]]
-	- [[#Customization & Extras#Multimedia & System Settings|Multimedia & System Settings]]
-	- [[#Customization & Extras#Plymouth Boot Splash|Plymouth Boot Splash]]
-	- [[#Customization & Extras#Disabling Unwanted Services|Disabling Unwanted Services]]
-			- [[#Option 2: Official NVIDIA Repository#==Some additional articles that you may also find useful==|Some additional articles that you may also find useful]]
-- [[#Final Thoughts|Final Thoughts]]
+- [Setup 42 Fedora KDE Plasma](#setup-42-fedora-kde-plasma)
+- [Getting Started](#getting-started)
+  - [Download & Verification](#download--verification)
+  - [Creating Bootable Media](#creating-bootable-media)
+- [Post-Install Setup](#post-install-setup)
+  - [Firmware Updates](#firmware-updates)
+  - [Network Configuration](#network-configuration)
+  - [DNF Package Manager Tweaks](#dnf-package-manager-tweaks)
+  - [Initial System Setup](#initial-system-setup)
+  - [Adding Repositories](#adding-repositories)
+- [Graphics & Hardware](#graphics--hardware)
+  - [Kernel & Build Tools](#kernel--build-tools)
+  - [AMD Graphics Setup](#amd-graphics-setup)
+  - [NVIDIA Graphics Setup](#nvidia-graphics-setup)
+    - [Option 1: RPM Fusion (Recommended for most users)](#option-1-rpm-fusion-recommended-for-most-users)
+    - [Option 2: Official NVIDIA Repository](#option-2-official-nvidia-repository)
+  - [User Permissions](#user-permissions)
+  - [Hybrid Graphics & PRIME](#hybrid-graphics--prime)
+  - [GPU Application Offload](#gpu-application-offload)
+- [Customization & Extras](#customization--extras)
+  - [KDE Customization](#kde-customization)
+  - [System Utilities & CPU Control](#system-utilities--cpu-control)
+  - [Multimedia & System Settings](#multimedia--system-settings)
+  - [Plymouth Boot Splash](#plymouth-boot-splash)
+  - [Disabling Unwanted Services](#disabling-unwanted-services)
+- [Final Thoughts](#final-thoughts)
+
 
 ##  Setup 42 Fedora KDE Plasma
 
