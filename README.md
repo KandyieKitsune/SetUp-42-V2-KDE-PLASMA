@@ -267,7 +267,7 @@ modinfo -F version nvidia
 
 If you don't see a version number, wait up to 5 minutes and try again. Only reboot once you see the NVIDIA driver version.
 
-#### Option 2: Official NVIDIA Repository
+#### Option 2: [Official NVIDIA Repository](https://developer.download.nvidia.com/compute/cuda/repos/)
 
 If RPM Fusion drivers give you trouble, try the official repo. As of writing, there's no Fedora 42 repo yet, but Fedora 41's works fine:
 
