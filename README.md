@@ -280,7 +280,7 @@ If RPM Fusion drivers give you trouble, try the official repo. As of writing, th
 
 ```bash
 wget https://developer.download.nvidia.com/compute/cuda/repos/fedora41/x86_64/cuda-fedora41.repo
-sudo dnf config-manager --add-repo ./cuda-fedora41.repo
+sudo dnf config-manager addrepo --from-repofile=./cuda-fedora41.repo
 sudo dnf install kmod-nvidia-latest-dkms nvidia-driver nvidia-driver-cuda nvidia-driver-libs nvidia-driver-cuda-libs nvidia-settings --allowerasing
 ```
 
