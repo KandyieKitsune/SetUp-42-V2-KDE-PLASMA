@@ -43,6 +43,7 @@
   - [Multimedia & System Settings](#multimedia--system-settings)
   - [Plymouth Boot Splash](#plymouth-boot-splash)
   - [Disabling Unwanted Services](#disabling-unwanted-services)
+  - [Adding Custom Gestures on Fedora](#adding-custom-gestures-on-fedora)
 - [Final Thoughts](#final-thoughts)
 
 
@@ -471,6 +472,123 @@ Calender Notification and Discover autostart at boot and use additional RAM. To 
 This prevents the application from autostarting without completely removing it.
 
 ---
+### Adding Custom Gestures on Fedora
+Setting up custom touchpad gestures on Fedora is actually pretty straightforward — thanks to libinput, which Fedora uses by default.
+
+### 🛠️ First, install the necessary tools:
+
+If you're using **Wayland**, run:
+
+```bash
+sudo dnf install xdotool wmctrl ydotool
+```
+
+If you're on **X11**, then you only need:
+
+```bash
+sudo dnf install xdotool wmctrl
+```
+
+### 👤 Add yourself to the input group:
+
+```bash
+sudo gpasswd -a $USER input
+```
+
+### 📦 Install `libinput-gestures`
+
+You can check out the [official GitHub page](https://github.com/bulletmark/libinput-gestures), but here's the quick and easy version:
+
+```bash
+git clone https://github.com/bulletmark/libinput-gestures.git
+cd libinput-gestures
+sudo ./libinput-gestures-setup install
+```
+
+Once that's done, **go ahead and reboot your system** — just to make sure everything loads cleanly.
+
+---
+
+### ✨ Now for the fun part — custom gestures!
+
+If you want to see live gesture input for debugging or experimenting, run:
+
+```bash
+sudo libinput debug-events
+```
+
+To create your own gestures, you’ll mostly be using `xdotool` (and `ydotool` if `xdotool` does not work on Wayland, and that's a big if, as it works using xwayland). You can explore their documentation if you want more complex setups:
+
+- [xdotool reference](https://github.com/jordansissel/xdotool/blob/master/xdotool.pod) or just run `man xdotool`
+    
+- `man ydotool` for that one too
+    
+
+---
+
+### 📸 Let's make a gesture that takes a screenshot
+
+Normally, pressing the **PrtSc** key takes a screenshot. You can do the same through the terminal like this:
+
+```bash
+xdotool key Print
+```
+
+> ⚠️ On Wayland, a permission popup might appear. Sadly, it won’t remember your choice after a reboot — known issue. But X11 handles this fine and remembers.
+
+Once that works in your terminal, we can turn it into a gesture.
+
+---
+
+### 📝 Create your gesture config file:
+
+```bash
+nvim ~/.config/libinput-gestures.conf
+```
+
+Add this simple line:
+
+```bash
+gesture hold on 3 xdotool key Print
+```
+
+This means: **hold three fingers** on the touchpad and it’ll trigger the PrintScreen key.
+
+---
+
+### 🚀 Make it start on login:
+
+```bash
+libinput-gestures-setup autostart
+libinput-gestures-setup stop desktop autostart start
+```
+
+If it says libinput failed to start, just **reboot your system**, then run that command again.
+
+---
+
+### ✅ Time to test!
+
+Place **three fingers** on the touchpad, hold for 2 seconds, then lift. You should see a screenshot happen — just like magic ✨
+
+---
+
+### 🛑 To stop the gestures:
+
+```bash
+libinput-gestures-setup stop
+```
+
+### ❌ And to stop it from auto-starting:
+
+```bash
+libinput-gestures-setup autostop
+```
+
+---
+
+Happy tweaking! Make it yours. You can keep adding more gestures — sky’s the limit 🌟
+
 ##### Some additional articles that you may also find useful
 - [RAM Management](https://medium.com/@manorit2001/linux-less-ram-want-more-a-guide-to-increasing-your-ram-in-linux-5d5efee6ae2a)
 - [Paul Sørensen's Blog](https://paulsorensen.io/fedora-kde-plasma-post-installation-guide/)
